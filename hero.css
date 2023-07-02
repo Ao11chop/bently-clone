@@ -1,0 +1,280 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+
+  main{
+    width: 100%;
+  }
+.hero_sec{
+    width: 100vw;
+    height: 97vh;
+    transition: 2s;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    /* background: url('/images/bentayga_2.jpg');
+    background-position: center;
+    background-size: cover; */
+}
+.hero_sec .shadow{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    box-shadow: inset 600px 0px 800px -200px rgba(20, 20, 20, 0.897);
+    background: url('/images/bentayga_2.jpg');
+    background-image: url('/images/bentayga_2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.hero_sec .hero_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: flex-start;
+    gap: 100px;
+    width: 350px;
+    height: 70%;
+    margin-top: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 30px;
+    left: 3%;
+    transition:ease-in;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    color: white;
+}
+.out{
+    display: none;
+}
+.hero_txt .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;   
+}
+.slider a{
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    font-weight: lighter;
+}
+.slider a:hover{
+    background-color: gray;
+}
+.slider .arrow{
+    width: 30px;
+    overflow-y: hidden;
+    padding: 0;
+}
+.slider .arrow span{
+    color: white;
+    font-size: 30px;
+    /* height: 40px; */
+    overflow-y: hidden;
+}
+.slider .change div{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid white;
+} 
+.hero_txt h1{
+    font-size: 22px;
+    font-weight: 500;
+}
+.hero_txt p{
+    font-size: 14px;
+}
+.hero_txt .link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    color: white;
+    background-color: #335b4c;
+}
+.hero_txt .link2{
+    background-color: transparent;
+    border: 2.7px solid white;
+}
+
+main .anchor_sec{
+    width: 100%;
+    /* height: 25vh; */
+    display: flex;
+    overflow-y: hidden;
+}
+.anchor_sec .achor_left, .achor_rgt{
+    overflow-y: hidden;
+}
+.hero_img .anchor_one{
+    height: 100%;
+    overflow-y: hidden;
+    /* width: 50vw; */
+}
+.anchor_sec img{
+    height: 100%;
+    overflow-y: hidden;
+    width: 50vw;
+}
+.anchor_sec .title{
+    padding: 15px 35px;
+    background-color: rgba(255, 255, 255, 0.882);
+    position: absolute;
+    overflow-y: hidden;
+    color: #335b4c;
+}
+.title:hover{
+    background-color: white;
+}
+
+ .tag_sec{
+    width: 100%;
+    height: fit-content;
+    background-color: #e6eae9;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.tag_sec ul{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 300px));
+    /* position: relative; */
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.tag_sec ul li{
+    height: 100%;
+}
+.tag_sec ul li a{
+    display: flex;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 17px;
+    border-right: 2px solid #d8d9dc;
+    color: #335b4c;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 40px 0;
+}
+.slides{
+    position: absolute;
+    display: none;
+    bottom: -7%;
+}
+.tag_sec ul li a:hover{
+    background-color: #c3d5d0e6;
+}
+.tag_sec ul li:nth-child(1) a{
+    border-left: 2px solid #d8d9dc;
+}
+
+@media screen and (max-width: 1500px) {
+    .hero_sec .hero_txt{
+        gap: 30px;
+    }
+}
+@media screen and (max-width:1380px) {
+    .hero_sec .hero_txt{
+        display: none;
+    }
+    .slides{
+        display: flex;
+    }
+    .out{
+        display: flex;
+        padding: 30px 0;
+        color: black;
+    }
+    .out .txt .linkage{
+        display: flex;
+        gap: 70px;
+    }
+    .out .txt a{
+        width: 300px;
+    }
+    .out .txt a:last-child{
+        color: black;
+        border: 3px solid black;
+    }
+}
+@media screen and (max-width:850px) {
+    .tag_sec{
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+    .tag_sec ul{
+        height: 100%;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        /* position: relative; */
+        align-items: flex-start;
+        border: none;
+        justify-content: flex-start;
+        padding: 0;
+    }   
+    .tag_sec ul .tag{
+        display: flex;
+        padding: 15px 18px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .tag_sec ul li{
+        height: 100%;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .tag_sec ul li:nth-child(1) a{
+        border-left: none;
+    }
+    .tag_sec ul li a{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 17px;
+        border-bottom: 2px solid #d8d9dc;
+        color: #335b4c;
+        font-size: 14px;
+        font-weight: 600;
+        /* padding: 35px 100px; */
+    }
+    
+}
+
